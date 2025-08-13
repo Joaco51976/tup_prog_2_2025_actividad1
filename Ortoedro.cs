@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejer1___Act1
+namespace Ejer2___Act1
 {
     public class Ortoedro
     {
@@ -54,16 +54,16 @@ namespace Ejer1___Act1
             string lateralesJson = string.Join(",\n", Laterales.Select(l => l.Describir()));
 
             return $@"{{
-    ""Tipo"": ""Ortoedro"",
-    ""Tapas"": [
-        {tapasJson}
-    ],
-    ""Laterales"": [
-        {lateralesJson}
-    ],
-    ""Area"": {Area:F2},
-    ""Volumen"": {Volumen:F2}
-}}";
+            ""Tipo"": ""Ortoedro"",
+            ""Tapas"": [
+            {tapasJson}
+            ],
+            ""Laterales"": [
+            {lateralesJson}
+            ],
+            ""Area"": {Area:F2},
+            ""Volumen"": {Volumen:F2}
+            }}";
         }
     }
 }
